@@ -3,7 +3,7 @@ name: Update Repositories
 on: 
   schedule:
     - cron:  '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs: 
   update-repos:
@@ -21,10 +21,10 @@ jobs:
           python-version:  '3.x'
           
       - name:  Update README with repositories
-        run: |
+        run:  |
           python3 << 'PYTHON_SCRIPT'
           import json
-          import urllib.request
+          import urllib. request
           from datetime import datetime
           
           # Fetch repositories
@@ -48,7 +48,7 @@ jobs:
               table += f"| [{name}]({url}) | {desc} | {lang} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
           
           # Read current README
-          with open('README.md', 'r', encoding='utf-8') as f:
+          with open('README. md', 'r', encoding='utf-8') as f:
               content = f.read()
           
           # Find markers and replace content between them
@@ -67,7 +67,7 @@ jobs:
               
               # Write updated README
               with open('README.md', 'w', encoding='utf-8') as f:
-                  f.write(new_content)
+                  f. write(new_content)
               
               print("✅ README updated successfully!")
           else:
@@ -77,8 +77,8 @@ jobs:
           
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user. email 'github-actions[bot]@users. noreply.github.com'
+          git config --global user. name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users. noreply.github.com'
           git add README.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
