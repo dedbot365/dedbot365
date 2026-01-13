@@ -21,11 +21,17 @@ jobs:
           python-version: '3.x'
           
       - name: Update README with repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'PYTHON_SCRIPT'
           import json
           import urllib.request
           import os
+
+          # Badge Configuration
+          BADGE_STYLE = "for-the-badge"
+
 
           # Badge Configuration
           BADGE_STYLE = "for-the-badge"
@@ -99,7 +105,12 @@ jobs:
           print("Fetching repositories...")
           url = "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc"
           try:
-              req = urllib.request.Request(url, headers={'User-Agent': 'Python/3.8'})
+              token = os.environ.get("GITHUB_TOKEN")
+              headers = {'User-Agent': 'Python/3.8'}
+              if token:
+                  headers['Authorization'] = f"Bearer {token}"
+              
+              req = urllib.request.Request(url, headers=headers)
               with urllib.request.urlopen(req) as response:
                   repos = json.loads(response.read())
           except Exception as e:
@@ -118,7 +129,7 @@ jobs:
               name = repo['name']
               url = repo['html_url']
               desc = repo['description'] if repo['description'] else "No description"
-              desc = desc.replace("|", "\|") # Escape pipe in description
+              desc = desc.replace("|", "\\|") # Escape pipe in description
               lang = repo['language']
               stars = repo['stargazers_count']
               forks = repo['forks_count']
