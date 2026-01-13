@@ -15,40 +15,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         
-      - name:  Fetch all repositories
+      - name:  Fetch and update repositories
         run: |
-          # Fetch all repositories for the user
-          REPOS=$(curl -s "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc")
+          # Fetch all repositories
+          curl -s "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc" > repos. json
           
-          # Generate markdown table
-          echo "| Repository | Description | Language | Stars | Forks | Last Updated |" > repos_table.md
-          echo "|------------|-------------|----------|-------|-------|--------------|" >> repos_table.md
+          # Create markdown table header
+          cat > repos_section.md << 'EOF'
+          | Repository | Description | Language | Stars | Forks | Last Updated |
+          |------------|-------------|----------|-------|-------|--------------|
+          EOF
           
-          echo "$REPOS" | jq -r '.[] | "| [\(. name)](\(.html_url)) | \(.description // "No description") | \(.language // "N/A") | ⭐ \(.stargazers_count) | 🔱 \(.forks_count) | \(.updated_at | split("T")[0]) |"' >> repos_table.md
+          # Parse JSON and create table rows
+          jq -r '.[] | "| [\(. name)](\(.html_url)) | \(.description // "No description") | \(.language // "N/A") | ⭐ \(.stargazers_count) | 🔱 \(.forks_count) | \(.updated_at | split("T")[0]) |"' repos.json >> repos_section. md
           
-      - name: Update README
-        run: |
-          # Read the repos table
-          REPOS_CONTENT=$(cat repos_table.md)
+          # Update README. md between markers
+          sed -i '/<!-- REPOS-START -->/,/<!-- REPOS-END -->/{//!d}' README.md
+          sed -i '/<!-- REPOS-START -->/r repos_section.md' README. md
           
-          # Update README between markers using awk
-          awk -v repos="$REPOS_CONTENT" '
-            BEGIN { skip=0 }
-            /<!-- REPOS-START -->/ { print; print repos; skip=1; next }
-            /<!-- REPOS-END -->/ { skip=0; print; next }
-            skip==0 { print }
-          ' README.md > README_new. md
-          mv README_new.md README.md
-          rm repos_table.md
+          # Cleanup
+          rm repos.json repos_section.md
           
       - name:  Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users. noreply.github.com'
+          git config --global user. email 'github-actions[bot]@users. noreply.github.com'
           git add README.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "docs: Auto-update repositories list"
+            git commit -m "docs: Auto-update repositories list [skip ci]"
             git push
           fi
