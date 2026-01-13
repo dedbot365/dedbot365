@@ -1,1 +1,88 @@
+name: Update Repositories
 
+on: 
+  schedule:
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
+
+jobs: 
+  update-repos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version:  '3.x'
+          
+      - name:  Update README with repositories
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import urllib.request
+          from datetime import datetime
+          
+          # Fetch repositories
+          url = "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc"
+          with urllib.request.urlopen(url) as response:
+              repos = json.loads(response.read())
+          
+          # Create markdown table
+          table = "| Repository | Description | Language | Stars | Forks | Last Updated |\n"
+          table += "|------------|-------------|----------|-------|-------|--------------|\n"
+          
+          for repo in repos:
+              name = repo['name']
+              url = repo['html_url']
+              desc = repo['description'] if repo['description'] else "No description"
+              lang = repo['language'] if repo['language'] else "N/A"
+              stars = repo['stargazers_count']
+              forks = repo['forks_count']
+              updated = repo['updated_at']. split('T')[0]
+              
+              table += f"| [{name}]({url}) | {desc} | {lang} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
+          
+          # Read current README
+          with open('README.md', 'r', encoding='utf-8') as f:
+              content = f.read()
+          
+          # Find markers and replace content between them
+          start_marker = "<!-- REPOS-START -->"
+          end_marker = "<!-- REPOS-END -->"
+          
+          start_idx = content.find(start_marker)
+          end_idx = content.find(end_marker)
+          
+          if start_idx != -1 and end_idx != -1:
+              new_content = (
+                  content[:start_idx + len(start_marker)] +
+                  "\n" + table +
+                  content[end_idx:]
+              )
+              
+              # Write updated README
+              with open('README.md', 'w', encoding='utf-8') as f:
+                  f.write(new_content)
+              
+              print("✅ README updated successfully!")
+          else:
+              print("❌ Could not find markers in README")
+          
+          PYTHON_SCRIPT
+          
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user. email 'github-actions[bot]@users. noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: Auto-update repositories list [skip ci]"
+            git push
+          fi
