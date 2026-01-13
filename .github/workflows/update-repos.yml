@@ -1,0 +1,62 @@
+name: Update Repositories
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs: 
+  update-repos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Fetch all repositories
+        id: fetch-repos
+        run: |
+          # Fetch all repositories for the user
+          REPOS=$(curl -s "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc")
+          
+          # Generate markdown table
+          echo "| Repository | Description | Language | Stars | Forks | Last Updated |" > repos_table.md
+          echo "|------------|-------------|----------|-------|-------|--------------|" >> repos_table.md
+          
+          echo "$REPOS" | jq -r '.[] | "| [\(. name)](\(.html_url)) | \(.description // "No description") | \(.language // "N/A") | ⭐ \(.stargazers_count) | 🔱 \(.forks_count) | \(.updated_at | split("T")[0]) |"' >> repos_table.md
+          
+      - name: Update README
+        run: |
+          # Read the repos table
+          REPOS_CONTENT=$(cat repos_table.md)
+          
+          # Update README between markers using perl
+          perl -i -pe 'BEGIN{undef $/;} s/<!-- REPOS-START -->.*?<!-- REPOS-END -->/<!-- REPOS-START -->\n$ENV{REPOS_CONTENT}\n<!-- REPOS-END -->/smg' README.md
+        env:
+          REPOS_CONTENT: ${{ steps.fetch-repos.outputs.repos_content }}
+          
+      - name:  Insert repos content
+        run: |
+          REPOS_CONTENT=$(cat repos_table.md)
+          awk -v repos="$REPOS_CONTENT" '
+            BEGIN { skip=0 }
+            /<!-- REPOS-START -->/ { print; print repos; skip=1; next }
+            /<!-- REPOS-END -->/ { skip=0; print; next }
+            skip==0 { print }
+          ' README.md > README_new. md
+          mv README_new.md README.md
+          rm repos_table.md
+          
+      - name:  Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users. noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "docs: Auto-update repositories list"
+            git push
+          fi
