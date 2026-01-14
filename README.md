@@ -56,6 +56,10 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/>
 </div>
 
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=dedbot365&theme=tokyonight&show_icons=true" alt="dedbot365's GitHub Stats"/>
+</div>
+
 ---
 
 ## All My Repositories
