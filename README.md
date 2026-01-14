@@ -93,6 +93,16 @@ I'm a passionate developer focused on building innovative solutions and contribu
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+### Embedded Systems & IoT
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![Raspberry%20Pi](https://img.shields.io/badge/Raspberry%20Pi-A22182?style=for-the-badge&logo=raspberry-pi&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-00BFFF?style=for-the-badge&logo=internet-of-things&logoColor=white)
+
+### AI & Machine Learning
+![AI](https://img.shields.io/badge/AI-FF6B6B?style=for-the-badge&logoColor=white)
+![Computer%20Vision](https://img.shields.io/badge/Computer%20Vision-FFB6C1?style=for-the-badge&logoColor=white)
+
 ---
 
 ## Connect With Me
