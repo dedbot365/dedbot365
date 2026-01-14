@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Hi, I'm Subigyan Paudel</h1>
-  <p><em>Software Developer | Open Source Enthusiast | Problem Solver</em></p>
+  <p><em>Software Developer | UI/UX Designer | AI/IoT Enthusiast</em></p>
   
   ![Profile Views](https://komarev.com/ghpvc/?username=dedbot365&color=brightgreen&style=flat-square)
   
@@ -18,12 +18,13 @@
 
 ## About Me
 
-I'm a passionate developer focused on building innovative solutions and contributing to open source projects. I love exploring new technologies and solving complex problems.
+Software developer with strong UI/UX design expertise, specializing in creating responsive, accessible interfaces with React and Angular. Experienced in building full-stack applications using ASP.NET MVC and modern web technologies. Enthusiastic about AI/ML and IoT, with demonstrated expertise in computer vision, embedded systems (Raspberry Pi, ESP32), and intelligent application development.
 
-- Currently working on various exciting projects
-- Always learning and growing
-- Open to collaborating on interesting projects
-- Feel free to reach out!
+- 🎨 UI/UX Design: Figma, Adobe XD, Design Systems, Prototyping
+- 💻 Front-End: React, Angular, HTML5, CSS3, Bootstrap, Responsive Design
+- ⚙️ Back-End: ASP.NET MVC, C#, Node.js, Python
+- 🤖 AI/IoT: Computer Vision, Machine Learning, Raspberry Pi, ESP32, Python
+- 📍 Based in Kathmandu, Nepal | Open to remote opportunities
 
 ---
 
