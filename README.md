@@ -19,9 +19,9 @@
 ## About Me
 
 <div align="center">
-  <table style="background: transparent; border: none; width: 100%;">
+  <table style="background: transparent; border: none; border-collapse: collapse; width: 100%;">
     <tr>
-      <td colspan="2" style="text-align: left; padding-bottom: 20px; border: none;">
+      <td colspan="2" style="text-align: left; padding-bottom: 20px; border: none; background: transparent;">
         <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
 
 <p>By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.</p>
