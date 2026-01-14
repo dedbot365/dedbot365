@@ -1,103 +1,97 @@
 <div align="center">
-
-⚡ WELCOME TO MY DIGITAL SPACE
-
-<!-- Header with Neo-Brutalist Styling using SVG/HTML -->
-
-<table width="100%">
-<tr>
-<td style="background-color: #FFDE03; border: 4px solid #000000; padding: 20px; box-shadow: 10px 10px 0px #000000;">
-<h1 align="center" style="font-family: 'Courier New', Courier, monospace; color: #000000;">
-HEY! I'M [YOUR NAME] 🚀
-</h1>
-<p align="center" style="font-weight: bold; font-size: 1.2em;">
-FULL-STACK DEVELOPER // PROBLEM SOLVER // COFFEE ADDICT
-</p>
-</td>
-</tr>
-</table>
-
-<!-- Stats Section -->
-
-<p align="center">
-<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api%3Fusername%3Ddedbot365%26show_icons%3Dtrue%26theme%3Dneo-brutalism%26border_color%3D000%26bg_color%3DFFDE03%26title_color%3D000%26icon_color%3D000%26text_color%3D000" height="150" style="border: 3px solid #000; box-shadow: 5px 5px 0px #000;" />
-<img src="https://www.google.com/search?q=https://github-readme-stats.vercel.app/api/top-langs/%3Fusername%3Ddedbot365%26layout%3Dcompact%26theme%3Dneo-brutalism%26border_color%3D000%26bg_color%3DFFDE03%26title_color%3D000%26text_color%3D000" height="150" style="border: 3px solid #000; box-shadow: 5px 5px 0px #000;" />
-</p>
-
-🛠️ TECH STACK
-
-<div style="background-color: #000000; color: #FFFFFF; padding: 10px; font-weight: bold; margin-bottom: 10px;">
-LANGUAGES
+  <h1>👋 Hi, I'm dedbot365</h1>
+  <p><em>Software Developer | Open Source Enthusiast | Problem Solver</em></p>
+  
+  ![Profile Views](https://komarev.com/ghpvc/?username=dedbot365&color=brightgreen&style=flat-square)
+  
+  <p>
+    <a href="https://github.com/dedbot365?tab=followers">
+      <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.demolab.com/github/followers/dedbot365?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/>
+    </a>
+    <a href="https://github.com/dedbot365?tab=repositories&sort=stargazers">
+      <img alt="total stars" title="Total stars on GitHub" src="https://custom-icon-badges.demolab.com/github/stars/dedbot365?color=55960c&style=for-the-badge&labelColor=488207&logo=star"/>
+    </a>
+  </p>
 </div>
 
-<!-- LANGS-START -->
+---
 
-<!-- This section is updated automatically by your GitHub Action -->
+## 🚀 About Me
 
-<!-- LANGS-END -->
+I'm a passionate developer focused on building innovative solutions and contributing to open source projects. I love exploring new technologies and solving complex problems.
 
-<div style="background-color: #000000; color: #FFFFFF; padding: 10px; font-weight: bold; margin-bottom: 10px;">
-FRAMEWORKS & TOOLS
+- 🔭 Currently working on various exciting projects
+- 🌱 Always learning and growing
+- 💡 Open to collaborating on interesting projects
+- 📫 Feel free to reach out!
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dedbot365&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dedbot365&layout=compact&langs_count=8&theme=tokyonight"/>
 </div>
 
-<!-- FRAMEWORKS-START -->
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/>
+</div>
 
-<!-- This section is updated automatically by your GitHub Action -->
+---
 
-<!-- FRAMEWORKS-END -->
-
-📦 MY LATEST REPOSITORIES
-
-<div style="border: 3px solid #000; box-shadow: 8px 8px 0px #FFDE03; padding: 15px;">
+## 📂 All My Repositories
 
 <!-- REPOS-START -->
-
-<!-- This table is updated automatically by your GitHub Action -->
-
-Repository
-
-Description
-
-Language
-
-Stars
-
-Forks
-
-Last Updated
-
-Loading...
-
-Please wait for the action to run
-
-...
-
-...
-
-...
-
-...
+| Repository | Description | Language | Stars | Forks | Last Updated |
+|------------|-------------|----------|-------|-------|--------------|
+| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-13 |
+| [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
+| [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
+| [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java programming language. | Java | ⭐ 0 | 🔱 0 | 2024-08-22 |
+| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-19 |
+| [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-09 |
+| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System | Java | ⭐ 0 | 🔱 0 | 2024-02-07 |
 
 <!-- REPOS-END -->
 
-</div>
+---
 
-📫 REACH ME AT
+## 🛠️ Tech Stack
 
-<p align="center">
-<a href="mailto:your-email@example.com">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/EMAIL-FFDE03%3Fstyle%3Dfor-the-badge%26logo%3Dgmail%26logoColor%3Dblack%26labelColor%3Dwhite%26border%3D2px_solid_black" style="box-shadow: 4px 4px 0px #000;" />
-</a>
-<a href="https://linkedin.com/in/yourprofile">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/LINKEDIN-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite%26labelColor%3Dblack" style="box-shadow: 4px 4px 0px #000;" />
-</a>
-<a href="https://www.google.com/search?q=https://twitter.com/yourhandle">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/TWITTER-000000%3Fstyle%3Dfor-the-badge%26logo%3Dx%26logoColor%3Dwhite%26labelColor%3Dblack" style="box-shadow: 4px 4px 0px #000;" />
-</a>
-</p>
+### Languages
+<!-- LANGS-START -->
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<!-- LANGS-END -->
+
+### Frameworks & Libraries
+<!-- FRAMEWORKS-START -->
+No frameworks detected yet (add topics to your repos!).
+<!-- FRAMEWORKS-END -->
+
+### Tools & Platforms
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+---
+
+## 🤝 Connect With Me
 
 <div align="center">
-<img src="https://www.google.com/search?q=https://komarev.com/ghpvc/%3Fusername%3Ddedbot365%26color%3Dblack%26style%3Dflat-square" alt="Views" />
+  
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dedbot365)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
 </div>
 
+---
+
+<div align="center">
+  <p>⭐️ From <a href="https://github.com/dedbot365">dedbot365</a> | Made with ❤️ and ☕</p>
 </div>
