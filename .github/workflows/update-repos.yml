@@ -122,39 +122,24 @@ jobs:
           frameworks = set()
 
           # Create markdown table
-          table = "| Repository | Description | Technologies | Stars | Forks | Last Updated |\n"
-          table += "|------------|-------------|---------------|-------|-------|--------------||\n"
+          table = "| Repository | Description | Language | Stars | Forks | Last Updated |\n"
+          table += "|------------|-------------|----------|-------|-------|--------------|\n"
           
           for repo in repos: 
               name = repo['name']
               url = repo['html_url']
               desc = repo['description'] if repo['description'] else "No description"
               desc = desc.replace("|", "\\|") # Escape pipe in description
+              lang = repo['language']
               stars = repo['stargazers_count']
               forks = repo['forks_count']
               updated = repo['updated_at'].split('T')[0]
               topics = repo.get('topics', [])
               
-              # Fetch all languages for this repo
-              try:
-                  langs_url = repo['languages_url']
-                  req = urllib.request.Request(langs_url, headers=headers)
-                  with urllib.request.urlopen(req) as response:
-                      langs_data = json.loads(response.read())
-                      repo_langs = list(langs_data.keys()) if langs_data else []
-              except:
-                  # Fallback to primary language if API call fails
-                  repo_langs = [repo['language']] if repo['language'] else []
+              table += f"| [{name}]({url}) | {desc} | {lang if lang else 'N/A'} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
               
-              # Create technologies string
-              if repo_langs:
-                  techs_str = ", ".join(sorted(repo_langs))
-                  for lang in repo_langs:
-                      languages.add(lang)
-              else:
-                  techs_str = "N/A"
-              
-              table += f"| [{name}]({url}) | {desc} | {techs_str} | {stars} | {forks} | {updated} |\n"
+              if lang:
+                  languages.add(lang)
               
               for topic in topics:
                   if topic.lower() in BADGE_CONFIG:
