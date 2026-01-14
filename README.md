@@ -43,16 +43,16 @@ I'm a passionate developer focused on building innovative solutions and contribu
 ## All My Repositories
 
 <!-- REPOS-START -->
-| Repository | Description | Technologies | Stars | Forks | Last Updated |
-|------------|-------------|---------------|-------|-------|--------------||
-| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | 0 | 0 | 2026-01-14 |
-| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | CSS, HTML, JavaScript | 0 | 0 | 2026-01-14 |
-| [bookbox](https://github.com/dedbot365/bookbox) | No description | C#, CSS, HTML, JavaScript | 0 | 1 | 2025-06-08 |
-| [expenzo](https://github.com/dedbot365/expenzo) | No description | C#, CSS, HTML | 0 | 0 | 2025-01-28 |
-| [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java programming language. | Java | 0 | 0 | 2024-08-22 |
-| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | No description | ANTLR, Assembly, Batchfile, C, C++, CMake, CSS, Cython, Forth, Fortran, HTML, JavaScript, Jinja, Jupyter Notebook, Meson, Perl, PowerShell, Python, Roff, SWIG, Shell, Smarty, XSLT | 0 | 0 | 2024-08-19 |
-| [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Assembly, Batchfile, C, C++, Cython, Forth, Fortran, HTML, JavaScript, Meson, PowerShell, Python, Roff, Shell, XSLT | 0 | 0 | 2024-08-09 |
-| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System | Java | 0 | 0 | 2024-02-07 |
+| Repository | Description | Language | Stars | Forks | Last Updated |
+|------------|-------------|----------|-------|-------|--------------|
+| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-14 |
+| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | JavaScript | ⭐ 0 | 🔱 0 | 2026-01-14 |
+| [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
+| [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
+| [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java programming language. | Java | ⭐ 0 | 🔱 0 | 2024-08-22 |
+| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-19 |
+| [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-09 |
+| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System | Java | ⭐ 0 | 🔱 0 | 2024-02-07 |
 
 <!-- REPOS-END -->
 
@@ -62,15 +62,10 @@ I'm a passionate developer focused on building innovative solutions and contribu
 
 ### Languages
 <!-- LANGS-START -->
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
-![C#](https://img.shields.io/badge/C#-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 <!-- LANGS-END -->
 
 ### Frameworks & Libraries
