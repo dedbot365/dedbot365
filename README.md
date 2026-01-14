@@ -22,8 +22,8 @@ Hey there! 👋 I'm **Subigyan Paudel**, a passionate software developer and UI/
 
 By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.
 
-<div style="display: flex; gap: 20px; align-items: flex-start;">
-  <div style="flex: 1;">
+<div style="display: grid; grid-template-columns: 1fr 150px; gap: 20px; grid-template-areas: 'content image'; align-items: start;">
+  <div style="grid-area: content;">
 
 **What I'm into:**
 - 🎨 Creating pixel-perfect designs in Figma and bringing them to life with code
@@ -35,7 +35,7 @@ By day, I'm building full-stack applications with React, Angular, and ASP.NET MV
 Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.
 
   </div>
-  <div style="flex-shrink: 0;">
+  <div style="grid-area: image; text-align: center;">
     <img src="images/me.png" alt="Profile" width="150px" style="border-radius: 10px;">
   </div>
 </div>
