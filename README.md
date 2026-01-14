@@ -92,8 +92,3 @@ No frameworks detected yet (add topics to your repos!).
 
 </div>
 
----
-
-<div align="center">
-  <p>From <a href="https://github.com/dedbot365">dedbot365</a> | Made with effort and passion</p>
-</div>
