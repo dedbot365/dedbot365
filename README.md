@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Hi, I'm dedbot365</h1>
+  <h1>Hi, I'm Subigyan Paudel</h1>
   <p><em>Software Developer | Open Source Enthusiast | Problem Solver</em></p>
   
   ![Profile Views](https://komarev.com/ghpvc/?username=dedbot365&color=brightgreen&style=flat-square)
