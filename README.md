@@ -41,7 +41,7 @@
 <p>Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.</p>
       </td>
       <td width="20%" style="text-align: center; border: none; vertical-align: top;">
-        <img src="images/me.png" alt="Profile" width="150px" style="border-radius: 10px;">
+        <img src="images/me.gif" alt="Profile" width="150px" style="border-radius: 10px;">
       </td>
     </tr>
   </table>
