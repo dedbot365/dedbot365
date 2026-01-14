@@ -22,7 +22,7 @@
   <table>
     <tr>
       <td width="50%">
-        <blockquote class="imgur-embed-pub" lang="en" data-id="a/SwsR8ws" data-context="false" ><a href="//imgur.com/a/SwsR8ws"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+        <img src="images/hi.png" alt="Profile" width="100%" style="border-radius: 10px;">
       </td>
       <td width="50%" style="text-align: left; padding-left: 20px;">
         <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
