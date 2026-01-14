@@ -18,13 +18,18 @@
 
 ## About Me
 
-Software developer with strong UI/UX design expertise, specializing in creating responsive, accessible interfaces with React and Angular. Experienced in building full-stack applications using ASP.NET MVC and modern web technologies. Enthusiastic about AI/ML and IoT, with demonstrated expertise in computer vision, embedded systems (Raspberry Pi, ESP32), and intelligent application development.
+Hey there!  I'm **Subigyan Paudel**, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.
 
-- 🎨 UI/UX Design: Figma, Adobe XD, Design Systems, Prototyping
-- 💻 Front-End: React, Angular, HTML5, CSS3, Bootstrap, Responsive Design
-- ⚙️ Back-End: ASP.NET MVC, C#, Node.js, Python
-- 🤖 AI/IoT: Computer Vision, Machine Learning, Raspberry Pi, ESP32, Python
-- 📍 Based in Kathmandu, Nepal | Open to remote opportunities
+By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.
+
+**What I'm into:**
+- 🎨 Creating pixel-perfect designs in Figma and bringing them to life with code
+- 💻 Building responsive, accessible web apps that work seamlessly across all devices
+- 🤖 Exploring AI/ML and computer vision to solve real-world problems
+- 📡 Playing with IoT and embedded systems (Arduino, ESP32, Raspberry Pi)
+- 🚀 Always learning and pushing the boundaries of what's possible
+
+Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.
 
 ---
 
