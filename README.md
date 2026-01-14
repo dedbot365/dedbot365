@@ -18,32 +18,26 @@
 
 ## About Me
 
-<div align="center">
-  <table>
-    <tr>
-      <td width="50%" style="text-align: left; padding-left: 20px;">
-        <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
-      </td>
-      <td width="50%">
-        <img src="images/hi.png" alt="Profile" width="100%" style="border-radius: 10px;">
-      </td>
-      
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <div style="flex: 1;">
+    <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
 
-<p>By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.</p>
+    <p>By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.</p>
 
-<p><strong>What I'm into:</strong></p>
-<ul>
-<li>🎨 Creating pixel-perfect designs in Figma and bringing them to life with code</li>
-<li>💻 Building responsive, accessible web apps that work seamlessly across all devices</li>
-<li>🤖 Exploring AI/ML and computer vision to solve real-world problems</li>
-<li>📡 Playing with IoT and embedded systems (Arduino, ESP32, Raspberry Pi)</li>
-<li>🚀 Always learning and pushing the boundaries of what's possible</li>
-</ul>
+    <p><strong>What I'm into:</strong></p>
+    <ul>
+      <li>🎨 Creating pixel-perfect designs in Figma and bringing them to life with code</li>
+      <li>💻 Building responsive, accessible web apps that work seamlessly across all devices</li>
+      <li>🤖 Exploring AI/ML and computer vision to solve real-world problems</li>
+      <li>📡 Playing with IoT and embedded systems (Arduino, ESP32, Raspberry Pi)</li>
+      <li>🚀 Always learning and pushing the boundaries of what's possible</li>
+    </ul>
 
-<p>Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.</p>
-      </td>
-    </tr>
-  </table>
+    <p>Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.</p>
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="images/hi.png" alt="Profile" width="250px" style="border-radius: 10px;">
+  </div>
 </div>
 
 ---
