@@ -48,7 +48,6 @@ I'm a passionate developer focused on building innovative solutions and contribu
 | [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-13 |
 | [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
 | [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
-| [co2-data](https://github.com/dedbot365/co2-data) | Data on CO2 and greenhouse gas emissions by Our World in Data | N/A | ⭐ 0 | 🔱 0 | 2024-12-24 |
 | [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java programming language. | Java | ⭐ 0 | 🔱 0 | 2024-08-22 |
 | [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-19 |
 | [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-09 |
