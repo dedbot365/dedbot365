@@ -18,35 +18,36 @@
 
 ## About Me
 
-<table>
-  <tr>
-    <td width="70%" valign="top">
+<div align="center">
+  <table>
+    <tr>
+      <td width="50%">
+        <img src="images/hi.png" alt="Profile" width="100%" style="border-radius: 10px;">
+      </td>
+      <td width="50%" style="text-align: left; padding-left: 20px;">
+        <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
 
-Hey there! 👋 I'm **Subigyan Paudel**, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.
+<p>By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.</p>
 
-By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.
+<p><strong>What I'm into:</strong></p>
+<ul>
+<li>🎨 Creating pixel-perfect designs in Figma and bringing them to life with code</li>
+<li>💻 Building responsive, accessible web apps that work seamlessly across all devices</li>
+<li>🤖 Exploring AI/ML and computer vision to solve real-world problems</li>
+<li>📡 Playing with IoT and embedded systems (Arduino, ESP32, Raspberry Pi)</li>
+<li>🚀 Always learning and pushing the boundaries of what's possible</li>
+</ul>
 
-**What I'm into:**
-
-- 🎨 Creating pixel-perfect designs in Figma and bringing them to life with code
-- 💻 Building responsive, accessible web apps that work seamlessly across all devices
-- 🤖 Exploring AI/ML and computer vision to solve real-world problems
-- 📡 Playing with IoT and embedded systems (Arduino, ESP32, Raspberry Pi)
-- 🚀 Always learning and pushing the boundaries of what's possible
-
-Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.
-
-    </td>
-    <td width="30%" align="center" valign="top">
-      <img src="images/hi.png" alt="Profile" width="250px" style="border-radius: 10px;">
-    </td>
-
-  </tr>
-</table>
+<p>Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.</p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## GitHub Stats
+
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/>
@@ -57,17 +58,16 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 ## All My Repositories
 
 <!-- REPOS-START -->
-
-| Repository                                                                                        | Description                                                                   | Language   | Stars | Forks | Last Updated |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------- | ----- | ----- | ------------ |
-| [dedbot365](https://github.com/dedbot365/dedbot365)                                               | No description                                                                | N/A        | ⭐ 0  | 🔱 0  | 2026-01-14   |
-| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui)                           | No description                                                                | JavaScript | ⭐ 0  | 🔱 0  | 2026-01-14   |
-| [bookbox](https://github.com/dedbot365/bookbox)                                                   | No description                                                                | HTML       | ⭐ 0  | 🔱 1  | 2025-06-08   |
-| [expenzo](https://github.com/dedbot365/expenzo)                                                   | No description                                                                | HTML       | ⭐ 0  | 🔱 0  | 2025-01-28   |
-| [Student_management_system](https://github.com/dedbot365/Student_management_system)               | GUI based simple student management system done in java programming language. | Java       | ⭐ 0  | 🔱 0  | 2024-08-22   |
-| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot)                                     | No description                                                                | Python     | ⭐ 0  | 🔱 0  | 2024-08-19   |
-| [LlamaTalk](https://github.com/dedbot365/LlamaTalk)                                               | No description                                                                | Python     | ⭐ 0  | 🔱 0  | 2024-08-09   |
-| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System                                                   | Java       | ⭐ 0  | 🔱 0  | 2024-02-07   |
+| Repository | Description | Language | Stars | Forks | Last Updated |
+|------------|-------------|----------|-------|-------|--------------|
+| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-14 |
+| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | JavaScript | ⭐ 0 | 🔱 0 | 2026-01-14 |
+| [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
+| [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
+| [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java programming language. | Java | ⭐ 0 | 🔱 0 | 2024-08-22 |
+| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-19 |
+| [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Python | ⭐ 0 | 🔱 0 | 2024-08-09 |
+| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System | Java | ⭐ 0 | 🔱 0 | 2024-02-07 |
 
 <!-- REPOS-END -->
 
@@ -76,7 +76,6 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 ## Tech Stack
 
 ### Frontend Technologies
-
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -87,7 +86,6 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 ### Backend Technologies
-
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![C%23](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
@@ -96,14 +94,12 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ### Databases
-
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ### Cloud & Services
-
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
@@ -111,21 +107,18 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 ### Tools & Platforms
-
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ### Embedded Systems & IoT
-
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 ![Raspberry%20Pi](https://img.shields.io/badge/Raspberry%20Pi-A22182?style=for-the-badge&logo=raspberry-pi&logoColor=white)
 ![IoT](https://img.shields.io/badge/IoT-00BFFF?style=for-the-badge&logo=internet-of-things&logoColor=white)
 
 ### AI & Machine Learning
-
 ![AI](https://img.shields.io/badge/AI-FF6B6B?style=for-the-badge&logoColor=white)
 ![Computer%20Vision](https://img.shields.io/badge/Computer%20Vision-FFB6C1?style=for-the-badge&logoColor=white)
 
@@ -141,3 +134,4 @@ Let's collaborate! I'm always open to interesting projects and love connecting w
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
 
 </div>
+
