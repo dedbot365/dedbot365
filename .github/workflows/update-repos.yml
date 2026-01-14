@@ -145,22 +145,6 @@ jobs:
                   if topic.lower() in BADGE_CONFIG:
                       frameworks.add(topic.lower())
 
-          # Generate Badges content
-          lang_badges = []
-          for lang in sorted(languages):
-              badge = generate_badge(lang, type="lang")
-              if badge:
-                  lang_badges.append(badge)
-
-          fw_badges = []
-          for fw in sorted(frameworks):
-              badge = generate_badge(fw, type="framework")
-              if badge:
-                  fw_badges.append(badge)
-
-          lang_content = "\n".join(lang_badges) if lang_badges else "No languages detected yet."
-          fw_content = "\n".join(fw_badges) if fw_badges else "No frameworks detected yet (add topics to your repos!)."
-
           # Read current README
           try:
               with open('README.md', 'r', encoding='utf-8') as f:
@@ -183,16 +167,14 @@ jobs:
                   print(f"Warning: Markers {start_marker}...{end_marker} not found.")
                   return content
 
-          # Update sections
+          # Update sections - only repositories, skip tech stack dynamic updates
           content = replace_section(content, "<!-- REPOS-START -->", "<!-- REPOS-END -->", table)
-          content = replace_section(content, "<!-- LANGS-START -->", "<!-- LANGS-END -->", lang_content)
-          content = replace_section(content, "<!-- FRAMEWORKS-START -->", "<!-- FRAMEWORKS-END -->", fw_content)
           
           # Write updated README
           with open('README.md', 'w', encoding='utf-8') as f:
               f.write(content)
           
-          print("✅ README updated successfully with Repos, Languages, and Frameworks!")
+          print("✅ README updated successfully with Repositories!")
           
           PYTHON_SCRIPT
           
