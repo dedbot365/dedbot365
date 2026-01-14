@@ -19,16 +19,16 @@
 ## About Me
 
 <div align="center">
-  <table style="background: transparent; border: none; border-collapse: collapse; width: 100%;">
+  <table style="background: transparent; border: 0; border-spacing: 0; border-collapse: collapse; width: 100%;">
     <tr>
-      <td colspan="2" style="text-align: left; padding-bottom: 20px; border: none; background: transparent;">
+      <td colspan="2" style="text-align: left; padding-bottom: 20px; border: 0; background: transparent; padding: 0 0 20px 0;">
         <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
 
 <p>By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.</p>
       </td>
     </tr>
     <tr>
-      <td width="80%" style="text-align: left; padding-right: 20px; border: none; vertical-align: top;">
+      <td width="80%" style="text-align: left; padding-right: 20px; border: 0; vertical-align: top; padding: 0 20px 0 0;">
         <p><strong>What I'm into:</strong></p>
 <ul>
 <li>🎨 Creating pixel-perfect designs in Figma and bringing them to life with code</li>
@@ -40,7 +40,7 @@
 
 <p>Let's collaborate! I'm always open to interesting projects and love connecting with fellow developers and designers.</p>
       </td>
-      <td width="20%" style="text-align: center; border: none; vertical-align: top;">
+      <td width="20%" style="text-align: center; border: 0; vertical-align: top; padding: 0;">
         <img src="images/me.png" alt="Profile" width="150px" style="border-radius: 10px;">
       </td>
     </tr>
