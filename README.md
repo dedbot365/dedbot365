@@ -45,6 +45,7 @@ I'm a passionate developer focused on building innovative solutions and contribu
 <!-- REPOS-START -->
 | Repository | Description | Language | Stars | Forks | Last Updated |
 |------------|-------------|----------|-------|-------|--------------|
+| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | JavaScript | ⭐ 0 | 🔱 0 | 2026-01-14 |
 | [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-14 |
 | [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
 | [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
@@ -63,6 +64,7 @@ I'm a passionate developer focused on building innovative solutions and contribu
 <!-- LANGS-START -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <!-- LANGS-END -->
 
