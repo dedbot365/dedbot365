@@ -18,7 +18,7 @@
 
 ## About Me
 
-Hey there!  I'm **Subigyan Paudel**, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.
+Hey there! I'm **Subigyan Paudel**, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.
 
 By day, I'm building full-stack applications with React, Angular, and ASP.NET MVC. By night, I'm tinkering with AI, computer vision, and IoT projects—whether it's bringing smart homes to life with ESP32 or training models on edge devices with Raspberry Pi.
 
