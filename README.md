@@ -22,7 +22,7 @@
   <table>
     <tr>
       <td width="50%">
-        <img src="images/hi.png" alt="Profile" width="100%" style="border-radius: 10px;">
+        <img src="images/me.png" alt="Profile" width="100%" style="border-radius: 10px;">
       </td>
       <td width="50%" style="text-align: left; padding-left: 20px;">
         <p>Hey there! 👋 I'm <strong>Subigyan Paudel</strong>, a passionate software developer and UI/UX designer from Kathmandu, Nepal. I love crafting beautiful, intuitive digital experiences that people actually enjoy using.</p>
