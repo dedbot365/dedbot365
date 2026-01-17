@@ -55,19 +55,6 @@
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/>
 </div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dedbot365&theme=tokyonight&show_icons=true" alt="dedbot365's GitHub Stats"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dedbot365&theme=tokyonight&layout=compact&langs_count=10" alt="Top Languages"/>
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dedbot365&theme=tokyonight&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies"/>
-</div>
-
 ---
 
 ## All My Repositories
