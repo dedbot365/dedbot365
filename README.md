@@ -54,10 +54,9 @@
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/>
-  <a href="https://github.com/dedbot365/github-status">
-    <img src="https://github.com/dedbot365/github-status/blob/master/generated/overview.svg#gh-dark-mode-only" />
-    <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg#gh-dark-mode-only" />
-  </a>
+  <img src="https://github.com/dedbot365/github-status/blob/master/generated/overview.svg#gh-dark-mode-only" />
+  <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg#gh-dark-mode-only" />
+ 
 </div>
 
 ---
