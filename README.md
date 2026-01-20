@@ -67,8 +67,8 @@
 <!-- REPOS-START -->
 | Repository | Description | Language | Stars | Forks | Last Updated |
 |------------|-------------|----------|-------|-------|--------------|
-| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-18 |
-| [github-status](https://github.com/dedbot365/github-status) | No description | Python | ⭐ 0 | 🔱 0 | 2026-01-18 |
+| [github-status](https://github.com/dedbot365/github-status) | No description | Python | ⭐ 0 | 🔱 0 | 2026-01-19 |
+| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-19 |
 | [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | JavaScript | ⭐ 0 | 🔱 0 | 2026-01-14 |
 | [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML | ⭐ 0 | 🔱 1 | 2025-06-08 |
 | [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML | ⭐ 0 | 🔱 0 | 2025-01-28 |
