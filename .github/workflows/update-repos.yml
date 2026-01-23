@@ -2,8 +2,8 @@ name: Update Repositories
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Runs at midnight UTC
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update-repos:
@@ -32,6 +32,8 @@ jobs:
 
           # --- Configuration ---
           USERNAME = "dedbot365"
+          START_MARKER = ""
+          END_MARKER = ""
 
           # --- Helper Functions ---
 
@@ -42,7 +44,6 @@ jobs:
                   if token:
                       headers['Authorization'] = f"Bearer {token}"
                   
-                  # Fetch language breakdown
                   req = urllib.request.Request(url, headers=headers)
                   with urllib.request.urlopen(req) as response:
                       data = json.loads(response.read())
@@ -52,12 +53,10 @@ jobs:
                       
                   # Sort by usage (bytes) in descending order
                   sorted_langs = sorted(data.items(), key=lambda item: item[1], reverse=True)
-                  
                   # Take top 3 keys
                   top_3 = [l[0] for l in sorted_langs[:3]]
                   return ", ".join(top_3)
               except Exception as e:
-                  print(f"Error fetching languages for {url}: {e}")
                   return "N/A"
 
           def clean_description(text, max_length=60):
@@ -65,10 +64,9 @@ jobs:
               if not text:
                   return "No description"
               
-              # Remove pipes (which break Markdown tables) and newlines
+              # Remove pipes and newlines
               clean_text = text.replace("|", "-").replace("\n", " ")
               
-              # Truncate if too long
               if len(clean_text) > max_length:
                   return clean_text[:max_length].strip() + "..."
               return clean_text
@@ -91,18 +89,16 @@ jobs:
               print(f"Error fetching repos: {e}")
               exit(1)
 
-          # Create markdown table header
+          # Build the new table
           table = "| Repository | Description | Top Languages | Stars | Forks | Last Updated |\n"
           table += "|------------|-------------|---------------|-------|-------|--------------|\n"
           
           for repo in repos: 
               name = repo['name']
               repo_url = repo['html_url']
-              
-              # 1. Process Description (Short & Sweet)
               desc = clean_description(repo['description'])
               
-              # 2. Process Languages (Top 3)
+              # Get languages
               langs_url = repo['languages_url']
               top_langs = get_top_languages(langs_url, token)
               
@@ -111,11 +107,10 @@ jobs:
               updated = repo['updated_at'].split('T')[0]
               
               table += f"| [{name}]({repo_url}) | {desc} | {top_langs} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
-              
-              # Sleep briefly to respect GitHub API limits
               time.sleep(0.1)
 
-          # Read current README
+          # --- READ & REPLACE LOGIC ---
+          
           readme_path = 'README.md'
           try:
               with open(readme_path, 'r', encoding='utf-8') as f:
@@ -124,28 +119,24 @@ jobs:
               print("README.md not found!")
               exit(1)
           
-          def replace_section(content, start_marker, end_marker, new_text):
-              start_idx = content.find(start_marker)
-              end_idx = content.find(end_marker)
+          start_idx = content.find(START_MARKER)
+          end_idx = content.find(END_MARKER)
+          
+          if start_idx != -1 and end_idx != -1:
+              print("Found markers. Updating table...")
+              # Keep top part + Insert Marker + Insert New Table + Insert Marker + Keep bottom part
+              new_content = (
+                  content[:start_idx + len(START_MARKER)] + 
+                  "\n" + table + "\n" + 
+                  content[end_idx:]
+              )
               
-              if start_idx != -1 and end_idx != -1:
-                  return (
-                      content[:start_idx + len(start_marker)] +
-                      "\n" + new_text + "\n" +
-                      content[end_idx:]
-                  )
-              else:
-                  print(f"Warning: Markers {start_marker}...{end_marker} not found.")
-                  return content
-
-          # Update sections
-          content = replace_section(content, "", "", table)
-          
-          # Write updated README
-          with open(readme_path, 'w', encoding='utf-8') as f:
-              f.write(content)
-          
-          print("✅ README updated successfully with Repositories!")
+              with open(readme_path, 'w', encoding='utf-8') as f:
+                  f.write(new_content)
+              print("✅ README updated successfully inside the markers!")
+          else:
+              print("❌ Error: Could not find or in README.md")
+              exit(1)
           
           PYTHON_SCRIPT
 
