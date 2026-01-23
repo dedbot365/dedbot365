@@ -55,10 +55,8 @@
 <a href="https://github.com/dedbot365/github-status">
   <img src="https://github.com/dedbot365/github-status/blob/master/generated/overview.svg" />
   <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg" />
+   <img src="https://github.com/dedbot365/github-streaks/blob/main/assets/Streaks/streak-github.svg?raw=true" alt="GitHub Streak" />
 </a>
-
-  <img src="https://github.com/dedbot365/github-streaks/blob/main/assets/Streaks/streak-github.svg?raw=true" alt="GitHub Streak" />
- 
 </div>
 
 ---
