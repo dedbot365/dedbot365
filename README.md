@@ -68,6 +68,17 @@
 <!-- REPOS-START -->
 | Repository | Description | Top Languages | Stars | Forks | Last Updated |
 |------------|-------------|---------------|-------|-------|--------------|
+| [dedbot365](https://github.com/dedbot365/dedbot365) | No description | N/A | ⭐ 0 | 🔱 0 | 2026-01-23 |
+| [ChainlitPDFBot](https://github.com/dedbot365/ChainlitPDFBot) | This project demonstrates a sophisticated PDF processing and... | Python | ⭐ 0 | 🔱 0 | 2026-01-23 |
+| [LlamaTalk](https://github.com/dedbot365/LlamaTalk) | No description | Python | ⭐ 0 | 🔱 0 | 2026-01-23 |
+| [snk](https://github.com/dedbot365/snk) | 🟩⬜ Generates a snake game from a github user contributions g... | TypeScript, Dockerfile | ⭐ 0 | 🔱 0 | 2026-01-23 |
+| [githubstatuscomponents](https://github.com/dedbot365/githubstatuscomponents) | No description | N/A | ⭐ 0 | 🔱 1 | 2026-01-23 |
+| [bookbox](https://github.com/dedbot365/bookbox) | No description | HTML, C#, JavaScript | ⭐ 0 | 🔱 1 | 2026-01-23 |
+| [github-status](https://github.com/dedbot365/github-status) | No description | Python | ⭐ 0 | 🔱 0 | 2026-01-22 |
+| [HertzCraft-CMP2a-ui](https://github.com/dedbot365/HertzCraft-CMP2a-ui) | No description | JavaScript, CSS, HTML | ⭐ 0 | 🔱 0 | 2026-01-14 |
+| [expenzo](https://github.com/dedbot365/expenzo) | No description | HTML, C#, CSS | ⭐ 0 | 🔱 0 | 2025-01-28 |
+| [Student_management_system](https://github.com/dedbot365/Student_management_system) | GUI based simple student management system done in java prog... | Java | ⭐ 0 | 🔱 0 | 2024-08-22 |
+| [Duke-learning-Movie-recommender.](https://github.com/dedbot365/Duke-learning-Movie-recommender.) | Movie Recommendation System | Java | ⭐ 0 | 🔱 0 | 2024-02-07 |
 
 <!-- REPOS-END -->
 
