@@ -32,8 +32,8 @@ jobs:
 
           # --- Configuration ---
           USERNAME = "dedbot365"
-          START_MARKER = ""
-          END_MARKER = ""
+          START_MARKER = "<!-- REPOS-START -->"
+          END_MARKER = "<!-- REPOS-END -->"
 
           # --- Helper Functions ---
 
