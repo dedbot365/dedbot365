@@ -57,7 +57,8 @@
   <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg#gh-dark-mode-only" />
 </a>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/> 
+  <img src="https://github.com/dedbot365/githubstatuscomponents/blob/main/assets/Streaks/streak-ocean-blue-dark.svg?raw=true" alt="GitHub Streak" />
+ 
 </div>
 
 ---
