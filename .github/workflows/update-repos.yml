@@ -1,25 +1,25 @@
 name: Update Repositories
 
-on: 
+on:
   schedule:
-    - cron:  '0 0 * * *'
-  workflow_dispatch: 
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-repos: 
+  update-repos:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
-    steps: 
+
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Python
-        uses:  actions/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-          
+
       - name: Update README with repositories
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -28,82 +28,56 @@ jobs:
           import json
           import urllib.request
           import os
+          import time
 
-          # Badge Configuration
-          BADGE_STYLE = "for-the-badge"
+          # --- Configuration ---
+          USERNAME = "dedbot365"
 
+          # --- Helper Functions ---
 
-          # Badge Configuration
-          BADGE_STYLE = "for-the-badge"
-          # Dictionary mapping Languages (Key=Name from GitHub) and Topics (Key=lowercase topic) to Badge Config
-          BADGE_CONFIG = {
-              # Languages
-              "Python": {"color": "3776AB", "logo": "python", "logoColor": "white"},
-              "JavaScript": {"color": "F7DF1E", "logo": "javascript", "logoColor": "black"},
-              "TypeScript": {"color": "007ACC", "logo": "typescript", "logoColor": "white"},
-              "Java": {"color": "ED8B00", "logo": "openjdk", "logoColor": "white"},
-              "C++": {"color": "00599C", "logo": "cplusplus", "logoColor": "white"},
-              "HTML": {"color": "E34F26", "logo": "html5", "logoColor": "white"},
-              "CSS": {"color": "1572B6", "logo": "css3", "logoColor": "white"},
-              "C": {"color": "A8B9CC", "logo": "c", "logoColor": "black"},
-              "C#": {"color": "239120", "logo": "csharp", "logoColor": "white"},
-              "Go": {"color": "00ADD8", "logo": "go", "logoColor": "white"},
-              "Rust": {"color": "000000", "logo": "rust", "logoColor": "white"},
-              "PHP": {"color": "777BB4", "logo": "php", "logoColor": "white"},
-              "Ruby": {"color": "CC342D", "logo": "ruby", "logoColor": "white"},
-              "Swift": {"color": "F05138", "logo": "swift", "logoColor": "white"},
-              "Kotlin": {"color": "7F52FF", "logo": "kotlin", "logoColor": "white"},
-              "Dart": {"color": "0175C2", "logo": "dart", "logoColor": "white"},
-              "Shell": {"color": "4EAA25", "logo": "gnu-bash", "logoColor": "white"},
+          def get_top_languages(url, token):
+              """Fetches language data and returns the top 3 as a string."""
+              try:
+                  headers = {'User-Agent': 'Python/3.8'}
+                  if token:
+                      headers['Authorization'] = f"Bearer {token}"
+                  
+                  # Fetch language breakdown
+                  req = urllib.request.Request(url, headers=headers)
+                  with urllib.request.urlopen(req) as response:
+                      data = json.loads(response.read())
+                      
+                  if not data:
+                      return "N/A"
+                      
+                  # Sort by usage (bytes) in descending order
+                  sorted_langs = sorted(data.items(), key=lambda item: item[1], reverse=True)
+                  
+                  # Take top 3 keys
+                  top_3 = [l[0] for l in sorted_langs[:3]]
+                  return ", ".join(top_3)
+              except Exception as e:
+                  print(f"Error fetching languages for {url}: {e}")
+                  return "N/A"
 
-              # Frameworks & Libraries (Keys should be lowercase to match topics)
-              "react": {"label": "React", "color": "20232A", "logo": "react", "logoColor": "61DAFB"},
-              "vue": {"label": "Vue.js", "color": "4FC08D", "logo": "vue.js", "logoColor": "white"},
-              "angular": {"label": "Angular", "color": "DD0031", "logo": "angular", "logoColor": "white"},
-              "svelte": {"label": "Svelte", "color": "FF3E00", "logo": "svelte", "logoColor": "white"},
-              "node": {"label": "Node.js", "color": "43853D", "logo": "node.js", "logoColor": "white"},
-              "express": {"label": "Express.js", "color": "404D59", "logo": "express", "logoColor": "white"},
-              "django": {"label": "Django", "color": "092E20", "logo": "django", "logoColor": "white"},
-              "flask": {"label": "Flask", "color": "000000", "logo": "flask", "logoColor": "white"},
-              "fastapi": {"label": "FastAPI", "color": "009688", "logo": "fastapi", "logoColor": "white"},
-              "spring": {"label": "Spring", "color": "6DB33F", "logo": "spring", "logoColor": "white"},
-              "laravel": {"label": "Laravel", "color": "FF2D20", "logo": "laravel", "logoColor": "white"},
-              "rails": {"label": "Ruby on Rails", "color": "CC0000", "logo": "ruby-on-rails", "logoColor": "white"},
-              "dotnet": {"label": ".NET", "color": "512BD4", "logo": ".net", "logoColor": "white"},
-              "tailwind": {"label": "Tailwind CSS", "color": "38B2AC", "logo": "tailwind-css", "logoColor": "white"},
-              "bootstrap": {"label": "Bootstrap", "color": "7952B3", "logo": "bootstrap", "logoColor": "white"},
-              "mongodb": {"label": "MongoDB", "color": "47A248", "logo": "mongodb", "logoColor": "white"},
-              "postgresql": {"label": "PostgreSQL", "color": "336791", "logo": "postgresql", "logoColor": "white"},
-              "mysql": {"label": "MySQL", "color": "4479A1", "logo": "mysql", "logoColor": "white"},
-              "redis": {"label": "Redis", "color": "DC382D", "logo": "redis", "logoColor": "white"},
-              "docker": {"label": "Docker", "color": "2496ED", "logo": "docker", "logoColor": "white"},
-              "kubernetes": {"label": "Kubernetes", "color": "326CE5", "logo": "kubernetes", "logoColor": "white"},
-              "aws": {"label": "AWS", "color": "232F3E", "logo": "amazon-aws", "logoColor": "white"},
-              "firebase": {"label": "Firebase", "color": "FFCA28", "logo": "firebase", "logoColor": "black"},
-          }
-
-          def generate_badge(name, type="lang"):
-              key = name.lower() if type == "framework" else name
-              config = None
+          def clean_description(text, max_length=60):
+              """Truncates description to be short and sweet."""
+              if not text:
+                  return "No description"
               
-              if type == "lang":
-                  config = BADGE_CONFIG.get(name)
-              else:
-                  config = BADGE_CONFIG.get(key) # Match lowercase topic
-
-              if not config:
-                  return None
-
-              label = config.get("label", name)
-              color = config["color"]
-              logo = config["logo"]
-              logoColor = config["logoColor"]
+              # Remove pipes (which break Markdown tables) and newlines
+              clean_text = text.replace("|", "-").replace("\n", " ")
               
-              return f"![{label}](https://img.shields.io/badge/{label}-{color}?style={BADGE_STYLE}&logo={logo}&logoColor={logoColor})"
+              # Truncate if too long
+              if len(clean_text) > max_length:
+                  return clean_text[:max_length].strip() + "..."
+              return clean_text
 
-          # Fetch repositories
+          # --- Main Script ---
+
           print("Fetching repositories...")
-          url = "https://api.github.com/users/dedbot365/repos?per_page=100&sort=updated&direction=desc"
+          url = f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=updated&direction=desc"
+          
           try:
               token = os.environ.get("GITHUB_TOKEN")
               headers = {'User-Agent': 'Python/3.8'}
@@ -116,38 +90,35 @@ jobs:
           except Exception as e:
               print(f"Error fetching repos: {e}")
               exit(1)
-          
-          # Sets for aggregation
-          languages = set()
-          frameworks = set()
 
-          # Create markdown table
-          table = "| Repository | Description | Language | Stars | Forks | Last Updated |\n"
-          table += "|------------|-------------|----------|-------|-------|--------------|\n"
+          # Create markdown table header
+          table = "| Repository | Description | Top Languages | Stars | Forks | Last Updated |\n"
+          table += "|------------|-------------|---------------|-------|-------|--------------|\n"
           
           for repo in repos: 
               name = repo['name']
-              url = repo['html_url']
-              desc = repo['description'] if repo['description'] else "No description"
-              desc = desc.replace("|", "\\|") # Escape pipe in description
-              lang = repo['language']
+              repo_url = repo['html_url']
+              
+              # 1. Process Description (Short & Sweet)
+              desc = clean_description(repo['description'])
+              
+              # 2. Process Languages (Top 3)
+              langs_url = repo['languages_url']
+              top_langs = get_top_languages(langs_url, token)
+              
               stars = repo['stargazers_count']
               forks = repo['forks_count']
               updated = repo['updated_at'].split('T')[0]
-              topics = repo.get('topics', [])
               
-              table += f"| [{name}]({url}) | {desc} | {lang if lang else 'N/A'} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
+              table += f"| [{name}]({repo_url}) | {desc} | {top_langs} | ⭐ {stars} | 🔱 {forks} | {updated} |\n"
               
-              if lang:
-                  languages.add(lang)
-              
-              for topic in topics:
-                  if topic.lower() in BADGE_CONFIG:
-                      frameworks.add(topic.lower())
+              # Sleep briefly to respect GitHub API limits
+              time.sleep(0.1)
 
           # Read current README
+          readme_path = 'README.md'
           try:
-              with open('README.md', 'r', encoding='utf-8') as f:
+              with open(readme_path, 'r', encoding='utf-8') as f:
                   content = f.read()
           except FileNotFoundError:
               print("README.md not found!")
@@ -167,17 +138,17 @@ jobs:
                   print(f"Warning: Markers {start_marker}...{end_marker} not found.")
                   return content
 
-          # Update sections - only repositories, skip tech stack dynamic updates
-          content = replace_section(content, "<!-- REPOS-START -->", "<!-- REPOS-END -->", table)
+          # Update sections
+          content = replace_section(content, "", "", table)
           
           # Write updated README
-          with open('README.md', 'w', encoding='utf-8') as f:
+          with open(readme_path, 'w', encoding='utf-8') as f:
               f.write(content)
           
           print("✅ README updated successfully with Repositories!")
           
           PYTHON_SCRIPT
-          
+
       - name: Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
