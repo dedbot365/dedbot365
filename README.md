@@ -53,11 +53,11 @@
 
 <div align="Center">
 <a href="https://github.com/dedbot365/github-status">
-  <img src="https://github.com/dedbot365/github-status/blob/master/generated/overview.svg#gh-dark-mode-only" />
-  <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg#gh-dark-mode-only" />
+  <img src="https://github.com/dedbot365/github-status/blob/master/generated/overview.svg" />
+  <img src="https://github.com/dedbot365/github-status/blob/master/generated/languages.svg" />
 </a>
 
-  <img src="https://github.com/dedbot365/githubstatuscomponents/blob/main/assets/Streaks/streak-github.svg?raw=true" alt="GitHub Streak" />
+  <img src="https://github.com/dedbot365/github-streaks/blob/main/assets/Streaks/streak-github.svg?raw=true" alt="GitHub Streak" />
  
 </div>
 
