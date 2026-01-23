@@ -59,6 +59,7 @@
 
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dedbot365&theme=tokyonight" alt="dedbot365's streak"/> 
 </div>
+[![GitHub Streak](https://streak-stats.demolab.com?user=https%3A%2F%2Fgithub.com%2Fdedbot365&theme=nightowl&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
 
 ---
 
