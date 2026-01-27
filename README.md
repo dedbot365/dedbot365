@@ -65,10 +65,10 @@
 
 <div align="Center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dedbot365/snk/manual-run-output/only-svg/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dedbot365/snk/manual-run-output/only-svg/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/dedbot365/snk/manual-run-output/only-svg/github-contribution-grid-snake.svg" />
-  </picture> 
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dedbot365/dedbot365/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dedbot365/dedbot365/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/dedbot365/dedbot365/output/github-snake.svg" />
+  </picture>
 </div>
 
 
