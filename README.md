@@ -81,9 +81,9 @@
 <!-- REPOS-START -->
 | Repository | Description | Top Languages | Stars | Forks | Last Updated |
 |------------|-------------|---------------|-------|-------|--------------|
-| [github-streaks](https://github.com/subigyanpaudel/github-streaks) | Automated GitHub Action that tracks your lifetime contributi... | N/A | ⭐ 0 | 🔱 0 | 2026-03-29 |
+| [github-streaks](https://github.com/subigyanpaudel/github-streaks) | Automated GitHub Action that tracks your lifetime contributi... | N/A | ⭐ 0 | 🔱 0 | 2026-03-30 |
+| [subigyanpaudel](https://github.com/subigyanpaudel/subigyanpaudel) | I'm Subigyan Paudel, a passionate software developer and UI/... | N/A | ⭐ 0 | 🔱 0 | 2026-03-29 |
 | [github-status](https://github.com/subigyanpaudel/github-status) | Generate visualizations of GitHub user and repository statis... | Python | ⭐ 0 | 🔱 1 | 2026-03-29 |
-| [subigyanpaudel](https://github.com/subigyanpaudel/subigyanpaudel) | I'm Subigyan Paudel, a passionate software developer and UI/... | N/A | ⭐ 0 | 🔱 0 | 2026-03-28 |
 | [MoneyPrinterV2](https://github.com/subigyanpaudel/MoneyPrinterV2) | Automate the process of making money online. | Python, Shell | ⭐ 0 | 🔱 0 | 2026-03-24 |
 | [NeuralDoc](https://github.com/subigyanpaudel/NeuralDoc) | This project is capable of giving the summary based on the d... | Python | ⭐ 0 | 🔱 0 | 2026-03-08 |
 | [smart_surveillance](https://github.com/subigyanpaudel/smart_surveillance) | No description | JavaScript, CSS, HTML | ⭐ 0 | 🔱 0 | 2026-03-04 |
